@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/sv_note_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/note_edit_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:minHeight="200dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- 涂鸦浮动按钮 -->
+    <ImageButton
+        android:id="@+id/btn_drawing_fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:background="#FF5722"
+        android:scaleType="center"
+        android:contentDescription="涂鸦" />
+
+</RelativeLayout>

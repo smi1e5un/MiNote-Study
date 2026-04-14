@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基础主题 -->
+    <style name="Theme.Notes" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+    <!-- 小米便签原有的 NoteTheme -->
+    <style name="NoteTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- ========== 缺失的样式定义 ========== -->
+
+    <!-- 主要文字样式 -->
+    <style name="TextAppearancePrimaryItem">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#DE000000</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- 次要文字样式 -->
+    <style name="TextAppearanceSecondaryItem">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#99000000</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- 菜单图标下方文字样式 -->
+    <style name="TextAppearanceUnderMenuIcon">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- 普通文字样式 -->
+    <style name="TextAppearanceNormal">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#DE000000</item>
+    </style>
+
+    <!-- 中等文字样式 -->
+    <style name="TextAppearanceMedium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#DE000000</item>
+    </style>
+
+    <!-- 大文字样式 -->
+    <style name="TextAppearanceLarge">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#DE000000</item>
+    </style>
+
+    <!-- 超大文字样式 -->
+    <style name="TextAppearanceSuper">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">#DE000000</item>
+    </style>
+</resources>
