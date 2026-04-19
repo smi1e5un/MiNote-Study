@@ -24,21 +24,43 @@ import net.micode.notes.data.Notes;
 import net.micode.notes.tool.ResourceParser;
 
 
+/**
+ * NoteWidgetProvider_4x - 4x4桌面小部件
+ * 继承自NoteWidgetProvider，实现4x4尺寸小部件的特定配置
+ */
 public class NoteWidgetProvider_4x extends NoteWidgetProvider {
+    /**
+     * 更新小部件
+     * 调用父类的update方法执行实际的更新逻辑
+     */
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         super.update(context, appWidgetManager, appWidgetIds);
     }
 
+    /**
+     * 获取小部件布局文件ID
+     * @return R.layout.widget_4x
+     */
+    @Override
     protected int getLayoutId() {
         return R.layout.widget_4x;
     }
 
+    /**
+     * 获取小部件背景资源ID
+     * @param bgId 背景颜色ID
+     * @return 对应的4x小部件背景资源
+     */
     @Override
     protected int getBgResourceId(int bgId) {
         return ResourceParser.WidgetBgResources.getWidget4xBgResource(bgId);
     }
 
+    /**
+     * 获取小部件类型
+     * @return TYPE_WIDGET_4X
+     */
     @Override
     protected int getWidgetType() {
         return Notes.TYPE_WIDGET_4X;
